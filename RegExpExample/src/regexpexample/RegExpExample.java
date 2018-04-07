@@ -13,32 +13,54 @@ public class RegExpExample {
 //        System.out.println(Pattern.compile("...").matcher("ice").matches());
 //        System.out.println("Enter One Character : ");
 //        System.out.println(Pattern.matches(".", new Scanner(System.in).next()));
-        System.out.println("use . for one char");
-        System.out.println("True Values");
-        System.out.println(Pattern.matches(".", "p"));
-        System.out.println(Pattern.matches(".s", "*s"));
-        System.out.println(Pattern.matches("p.", "pv"));
-        System.out.println(Pattern.matches("ab.", "aby"));
-        System.out.println("False Values");
-        System.out.println(Pattern.matches(".", "pp"));
-        System.out.println(Pattern.matches(".s", "*p"));
-        System.out.println(Pattern.matches("p.", "ov"));
-        System.out.println(Pattern.matches("ab.", "avp"));    
+//        System.out.println("use . for one char");
+//        System.out.println("True Values");
+//        System.out.println(Pattern.matches(".", "p"));
+//        System.out.println(Pattern.matches(".s", "*s"));
+//        System.out.println(Pattern.matches("p.", "pv"));
+//        System.out.println(Pattern.matches("ab.", "aby"));
+//        System.out.println("False Values");
+//        System.out.println(Pattern.matches(".", "pp"));
+//        System.out.println(Pattern.matches(".s", "*p"));
+//        System.out.println(Pattern.matches("p.", "ov"));
+//        System.out.println(Pattern.matches("ab.", "avp"));    
+//        
+//        System.out.println("Use [] for set of char");
+//        System.out.println("True Values");
+//        System.out.println(Pattern.matches("[abc]", "a"));
+//        System.out.println(Pattern.matches("[abc]", "b"));
+//        System.out.println(Pattern.matches("[abc]", "c"));
+//        System.out.println(Pattern.matches("[abc][abc]", "aa"));
+//        System.out.println(Pattern.matches("[abc].", "ax"));
+//        System.out.println(Pattern.matches("[a-zA-Z].", "G%"));
+//        
+//        System.out.println("False Values");
+//        System.out.println(Pattern.matches("[abc]", "aa"));
+//        System.out.println(Pattern.matches("[abc]", "o"));
+//        System.out.println(Pattern.matches("[abc]", "*"));
+//        System.out.println(Pattern.matches("[abc].", "xa"));
         
-        System.out.println("Use [] for set of char");
+         
+        System.out.println("Use ? + *  for set of char");
         System.out.println("True Values");
-        System.out.println(Pattern.matches("[abc]", "a"));
-        System.out.println(Pattern.matches("[abc]", "b"));
-        System.out.println(Pattern.matches("[abc]", "c"));
-        System.out.println(Pattern.matches("[abc][abc]", "aa"));
-        System.out.println(Pattern.matches("[abc].", "ax"));
-        System.out.println(Pattern.matches("[a-zA-Z].", "G%"));
+        System.out.println(Pattern.matches("[abc]?", "a"));
+        System.out.println(Pattern.matches("[abc]?", ""));
+        System.out.println(Pattern.matches("[abc]+", "c"));
+        System.out.println(Pattern.matches("[abc]+", "aa"));
+        System.out.println(Pattern.matches("[abc]*", ""));
+        System.out.println(Pattern.matches("[abc]*", "aaa"));
+        System.out.println(Pattern.matches("[abc]*", "aaabbbbb"));
+        System.out.println(Pattern.matches("[0-9]{2}-[987]{1}[0-9]{9}", "91-9004710888"));
+        System.out.println(Pattern.matches("\\d{2}-[987]{1}\\d{9}", "91-9004710888"));
         
-        System.out.println("False Values");
-        System.out.println(Pattern.matches("[abc]", "aa"));
-        System.out.println(Pattern.matches("[abc]", "o"));
-        System.out.println(Pattern.matches("[abc]", "*"));
-        System.out.println(Pattern.matches("[abc].", "xa"));
+       
+         System.out.println("False Values");
+        System.out.println(Pattern.matches("[abc]?", "aa"));
+        System.out.println(Pattern.matches("[abc]+", ""));
+        System.out.println(Pattern.matches("[abc]*", "oababab"));
+        System.out.println(Pattern.matches("[abc]*", "x"));
+        System.out.println(Pattern.matches("[0-9]{2}-[987]{1}[0-9]{9}", "91-2004710888"));
+        
     }
     
 }
