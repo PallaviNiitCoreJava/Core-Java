@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StudentDetails>
+	<Student id="001">
+		<name>Pranay</name>
+		<address>Goregaon</address>
+		<marks>70</marks>
+	</Student>
+	<Student id="002">
+		<name>Pavan</name>
+		<address>Jogeshwari</address>
+		<marks>75</marks>
+	</Student>
+	<Student id="003">
+		<name>Nishtha</name>
+		<address>Malad</address>
+		<marks>80</marks>
+	</Student>
+	<Student id="004">
+		<name>Lavanya</name>
+		<address>Goregaon</address>
+		<marks>85</marks>
+	</Student>
+</StudentDetails>

@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<Style>
+	.col
+	{
+		width : 90%;
+		height:100px;
+		background-color : orange;
+		display:block;
+		margin : 10px 10px 10px 10px;
+	}
+	.aside
+	{
+		width:100%
+		height:100px;
+		background-color:blue;
+	}
+	.col-1
+	{
+		background-color : red;
+	}
+	.col-2
+	{
+		background-color : green;
+	}
+	.col-3
+	{
+		background-color : yellow;
+	}
+	.col-4
+	{
+		background-color : skyblue;
+	}
+	.col-5
+	{
+		background-color : pink;
+	}
+	@media screen and (min-width:760px)
+	{
+	.col
+		{
+			width : 20%;
+			background-color : skyblue;
+			height:100px;
+			display:inline-block;
+			margin : 10px 10px 10px 10px;
+		}
+	.aside
+	{
+		width:15%;
+		background-color:lightgreen;
+		height:500px;
+		float:right;
+	}
+	}
+
+</Style>
+</HEAD>
+<BODY>
+	<Div class="aside">Aside</Div>
+	<Div class="col col-1">One</Div>
+	<Div class="col col-2">Two</Div>
+	<Div class="col col-3">Three</Div>
+	<Div class="col col-4">Four</Div>
+	<Div class="col col-5">Five</Div>
+	
+	
+</BODY>
+</HTML>

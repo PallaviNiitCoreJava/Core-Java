@@ -1,0 +1,55 @@
+<HTML>
+	<Head>
+		<Style>
+			#one
+			{
+				width:100px;
+				height:100px;
+				background-color:orange;
+			}
+		</Style>
+	</Head>
+	<Body>
+		<Script>
+			//alert("This is Alert Box.");
+			//var x=confirm("Do you want to Continue? ");
+			//document.write(x);
+			/*var c=prompt("Enter City Name ");
+			if(c==null)
+			{
+				document.write("Please enter City");
+			}
+			else
+			document.write(c);
+			var a=prompt("Enter a Number ");
+			var b=prompt("Enter a Number ");
+			alert(eval(a)+eval(b));*/
+		</Script>
+		<p id="p1"><u>This is Simple Para.</u></p>
+		<div id="one"></div>
+		<Button id="b1">Click Me</Button>
+			
+		<script>
+		/*function change(){
+				var v=document.getElementById("p1");
+				//document.write(v);
+				v.innerText="<b>This is Using JS</b>";
+				v.innerHTML="<b>This is Using JS</b>";
+				var d=document.getElementById("one");
+				d.style.backgroundColor="Blue";
+			}
+	document.getElementById("b1").addEventListener("click",change);*/
+	document.getElementById("b1").addEventListener("click",function(){
+				var v=document.getElementById("p1");
+				//document.write(v);
+				v.innerText="<b>This is Using JS</b>";
+				v.innerHTML="<b>This is Using JS</b>";
+				var d=document.getElementById("one");
+				d.style.backgroundColor="Blue";
+			});
+			
+			
+		</script>
+		
+	</Body>
+</HTML>

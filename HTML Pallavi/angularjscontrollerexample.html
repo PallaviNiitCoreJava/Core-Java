@@ -1,0 +1,19 @@
+<html>
+<body style="background:#f5e799;font-family:verdana;font-size:16px;">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<div ng-app="" ng-controller="mycontroller">
+<p>marks details</p>
+<p>Firstname:<input type="text" ng-model="firstname"></p>
+<p> lastname:<input type="text" ng-model="lastname"></p>
+<p>hi {{firstname+" "+lastname}}</p>
+
+</div>
+<script>
+function mycontroller($scope)
+{
+$scope.firstname="steve";
+$scope.lastname="jobs";
+}
+</script>
+</body>
+</html>

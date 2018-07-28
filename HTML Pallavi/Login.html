@@ -1,0 +1,31 @@
+<HTML>
+	<Head>
+		<Script>
+			function greet()
+			{
+				var v=document.login.un.value;
+				alert("Welcome "+v);
+			}
+		</Script>
+	</Head>
+	<Body>
+
+		<table>
+			<form action="JavaScriptExample.html" name="login" method="post">
+				<tr>
+					<td><label >User Name : </label></td>
+					<td><input type="text" name="un"/></td>
+				</tr>
+				<tr>
+					<td><label >Password : </label></td>
+					<td><input type="text" name="pass"/></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Login"/></td>
+					<td><input type="button" value="Greet" onclick="greet()"/></td>
+				</tr>
+			</form>
+		</table>
+	</Body>
+</HTML>
+

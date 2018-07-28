@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+
+<xs:element type="StudentDetails"/>
+	
+<xs:complexType name="StudentDetails">
+		<xs:sequence>
+			<xs:element type="Student"/>
+	</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="Student">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="address" type="xs:string"/>
+			<xs:element name="marks" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

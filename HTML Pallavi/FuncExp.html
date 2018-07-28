@@ -1,0 +1,25 @@
+<HTML>
+<Head>
+</Head>
+<Body>
+<style>
+	div
+	{
+		height:200px;
+		width:200px;
+	}
+</style>
+<Script>
+	function task()
+	{
+		var t=document.getElementById('t1').value;
+		var d=document.getElementById('one');
+		d.innerText="Welcome To JavaScript";
+		d.setAttribute("style","border:1px solid black; display:inline-block;background-color:"+t+"");
+	}
+</Script>
+
+	<input id="t1" type="color" onchange="task()"/>	
+	<div id="one"></div>
+</Body>
+</HTML>
